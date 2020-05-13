@@ -228,10 +228,10 @@ namespace WindowsFormsApp1
         public void InsertCheckUnique()
         {
             DbConnection dbConnection = new DbConnection();
-            string date1 = Convert.ToString(dateTimePicker1.Value);
-            string date2 = Convert.ToString(dateTimePicker2.Value);
-
+            string date1 = Convert.ToString(dateTimePicker1.Value.ToString("yyyy-MM-dd HH:mm.ss"));
+            string date2 = Convert.ToString(dateTimePicker2.Value.ToString("yyyy-MM-dd HH:mm.ss"));
             dbConnection.Insert(textBox20.Text, date1, date2, "CheckUnique");
+            MessageBox.Show(""+ date1 + "  "+ date2);
         }
         private void button19_Click(object sender, EventArgs e)//UPDATE CheckUnique
         {

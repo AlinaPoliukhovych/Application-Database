@@ -75,9 +75,9 @@ namespace WindowsFormsApp1
                         sqlConnection.Open();
                         SqlCommand command = new SqlCommand($"INSERT INTO [{tableName}] VALUES (@column1, @column2, @column3)", sqlConnection);
 
-                        command.Parameters.AddWithValue("@column1", @column1);
-                        command.Parameters.AddWithValue("@column2", @column2);
-                        command.Parameters.AddWithValue("@column3", @column3);
+                        command.Parameters.AddWithValue("@column1", column1);
+                        command.Parameters.AddWithValue("@column2", column2);
+                        command.Parameters.AddWithValue("@column3", column3);
 
                         await command.ExecuteNonQueryAsync();
 
