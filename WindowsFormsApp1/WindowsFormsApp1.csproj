@@ -190,10 +190,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DB\Dairy.mdf">
+    <Content Include="Resources\DB\Dairy.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="DB\Dairy_log.ldf">
+    <Content Include="Resources\DB\Dairy_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Dairy.mdf</DependentUpon>
     </Content>
