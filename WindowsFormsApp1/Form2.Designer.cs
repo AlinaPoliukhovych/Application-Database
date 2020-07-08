@@ -256,7 +256,7 @@
             // вихідToolStripMenuItem
             // 
             this.вихідToolStripMenuItem.Name = "вихідToolStripMenuItem";
-            this.вихідToolStripMenuItem.Size = new System.Drawing.Size(136, 30);
+            this.вихідToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
             this.вихідToolStripMenuItem.Text = "Вихід";
             this.вихідToolStripMenuItem.Click += new System.EventHandler(this.вихідToolStripMenuItem_Click);
             // 
@@ -987,7 +987,7 @@
             this.textBox21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox21.Multiline = true;
             this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(233, 29);
+            this.textBox21.Size = new System.Drawing.Size(233, 33);
             this.textBox21.TabIndex = 8;
             // 
             // panel14
@@ -1451,7 +1451,7 @@
             this.textBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox17.Multiline = true;
             this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(233, 29);
+            this.textBox17.Size = new System.Drawing.Size(233, 46);
             this.textBox17.TabIndex = 8;
             // 
             // panel11

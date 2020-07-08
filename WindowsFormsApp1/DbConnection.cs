@@ -50,7 +50,7 @@ namespace WindowsFormsApp1
                         await command.ExecuteNonQueryAsync();
 
                     }
-                    MessageBox.Show("Успішно додано!", "Повідомлення!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Успішно додано!", "Повідомлення!", MessageBoxButtons.OK);
                 }
                 else
                 {
@@ -82,7 +82,7 @@ namespace WindowsFormsApp1
                         await command.ExecuteNonQueryAsync();
 
                     }
-                    MessageBox.Show("Успішно додано!", "Повідомлення!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Успішно додано!", "Повідомлення!", MessageBoxButtons.OK);
                 }
                 else
                 {
@@ -91,7 +91,7 @@ namespace WindowsFormsApp1
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message.ToString(), "Помилка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Продукція з таким ID більше не реалізується, оберіть іншу продукцію.", "Помилка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         public async void Insert(string column1, string column2, string column3, string column4, string column5, string tableName)
@@ -119,7 +119,7 @@ namespace WindowsFormsApp1
                         await command.ExecuteNonQueryAsync();
 
                     }
-                    MessageBox.Show("Успішно додано!", "Повідомлення!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Успішно додано!", "Повідомлення!", MessageBoxButtons.OK);
                 }
                 else
                 {
@@ -151,7 +151,7 @@ namespace WindowsFormsApp1
 
                         await command.ExecuteNonQueryAsync();
                     }
-                    MessageBox.Show("Успішно редаговано!", "Повідомлення!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Успішно редаговано!", "Повідомлення!", MessageBoxButtons.OK);
                 }
                 else
                 {
@@ -187,7 +187,7 @@ namespace WindowsFormsApp1
                         await command.ExecuteNonQueryAsync();
 
                     }
-                    MessageBox.Show("Успішно редаговано!", "Повідомлення!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Успішно редаговано!", "Повідомлення!", MessageBoxButtons.OK);
                 }
                 else
                 {
@@ -231,7 +231,7 @@ namespace WindowsFormsApp1
 
                         await command.ExecuteNonQueryAsync();
                     }
-                    MessageBox.Show("Успішно редаговано!", "Повідомлення!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Успішно редаговано!", "Повідомлення!", MessageBoxButtons.OK);
 
                 }
                 else
@@ -260,7 +260,7 @@ namespace WindowsFormsApp1
                         await command.ExecuteNonQueryAsync();
 
                     }
-                    MessageBox.Show("Видалено!", "Повідомлення!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Видалено!", "Повідомлення!", MessageBoxButtons.OK);
                 }
                 else
                 {

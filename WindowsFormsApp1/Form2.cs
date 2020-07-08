@@ -112,7 +112,7 @@ namespace WindowsFormsApp1
             Task task = new Task(InsertTypeProduct);
             task.Start();
             task.Wait();
-
+            Thread.Sleep(1000);
             textBox7.Text = "";
             dataGridView2.DataSource = new DbConnection().GetData($"SELECT * FROM TypeProduct");
         }
@@ -127,6 +127,7 @@ namespace WindowsFormsApp1
             Task task = new Task(UpdateTypeProduct);
             task.Start();
             task.Wait();
+            Thread.Sleep(1000);
 
             textBox2.Text = "";
             textBox4.Text = "";
@@ -144,6 +145,7 @@ namespace WindowsFormsApp1
             Task task = new Task(DeleteTypeProduct);
             task.Start();
             task.Wait();
+            Thread.Sleep(1000);
 
             textBox1.Text = "";
             dataGridView2.DataSource = new DbConnection().GetData($"SELECT * FROM TypeProduct");
@@ -244,8 +246,8 @@ namespace WindowsFormsApp1
 
         public void UpdateCheckUnique()
         {
-            string date1 = Convert.ToString(dateTimePicker4.Value);
-            string date2 = Convert.ToString(dateTimePicker3.Value);
+            string date1 = Convert.ToString(dateTimePicker4.Value.ToString("yyyy-MM-dd HH:mm.ss"));
+            string date2 = Convert.ToString(dateTimePicker3.Value.ToString("yyyy-MM-dd HH:mm.ss"));
             
             DbConnection dbConnection = new DbConnection();
             dbConnection.Update("AffiliateID", textBox18.Text, "DateSold", date1, "DatePayment", date2, "CheckUnique", textBox19.Text);
@@ -406,6 +408,7 @@ namespace WindowsFormsApp1
         {
             Form9 form9 = new Form9();
             form9.Show();
-        }        
+        }
+        
     }
 }
